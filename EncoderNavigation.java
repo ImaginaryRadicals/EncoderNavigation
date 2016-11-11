@@ -126,7 +126,7 @@ public class EncoderNavigation
         else if (rotationMode == RotationMode.OPPOSITE_DIRECTION) {
             r1_mm = ROBOT_WIDTH_MM * s1/(s2+s1);
             r2_mm = ROBOT_WIDTH_MM - r1_mm;
-            r_center_mm = r2_mm-r1_mm;
+            r_center_mm = (r2_mm-r1_mm)/2;
         }        
         else {
             System.out.println("Wrong rotationMode value.");
