@@ -158,14 +158,14 @@ public class EncoderNavigation
             case LEFT_SIDE:
                 // same for both sides
                 deltaHeading_deg = -(arcDistance_mm / radiusFromCenter_mm) * (180 /  Math.PI);        
-                deltaRobotY_mm =  Math.abs(radiusFromCenter_mm) * Math.sin(deltaHeading_deg * (Math.PI/180));
+                deltaRobotY_mm =  -radiusFromCenter_mm * Math.sin(deltaHeading_deg * (Math.PI/180));
                 // unique
                 deltaRobotX_mm = radiusFromCenter_mm * (1 - Math.cos(deltaHeading_deg * (Math.PI/180)));
                 break;
             case RIGHT_SIDE:
                 // same for both sides
                 deltaHeading_deg = -(arcDistance_mm / radiusFromCenter_mm) * (180 /  Math.PI);        
-                deltaRobotY_mm =  Math.abs(radiusFromCenter_mm) * Math.sin(deltaHeading_deg * (Math.PI/180));
+                deltaRobotY_mm =  -radiusFromCenter_mm * Math.sin(deltaHeading_deg * (Math.PI/180));
                 // unique
                 deltaRobotX_mm = radiusFromCenter_mm * (1 - Math.cos(deltaHeading_deg * (Math.PI/180)));
                 break;
