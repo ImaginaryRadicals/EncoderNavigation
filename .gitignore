@@ -1,0 +1,11 @@
+
+# Vim
+*.swp
+
+#Doc Ordner
+**/doc
+*.class
+*.pkh
+*.ctxt
+*.bluej
+.DS_Store
