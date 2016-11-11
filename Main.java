@@ -24,7 +24,7 @@ public class Main
         
         System.out.println("Main Function");
 
-        encoderNav.setSteps(10,20);
+        encoderNav.setSteps(99,100);
         //encoderNav.printResults();
         
     }
